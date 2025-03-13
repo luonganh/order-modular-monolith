@@ -1,7 +1,100 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|_Solution Items{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|_Solution Items{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|_Solution Items{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|_Solution Items{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|_Solution Items{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|_Solution Items{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|_Solution Items{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|_Solution Items{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\ordermanagement.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\ordermanagement.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\ordermanagement.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\ordermanagement.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2344EFF-A6E5-4013-BB9C-6F6E60F85490}|Modules\\Products\\OrderManagement.Modules.Products.Application\\OrderManagement.Modules.Products.Application.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\modules\\products\\ordermanagement.modules.products.application\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2344EFF-A6E5-4013-BB9C-6F6E60F85490}|Modules\\Products\\OrderManagement.Modules.Products.Application\\OrderManagement.Modules.Products.Application.csproj|solutionrelative:modules\\products\\ordermanagement.modules.products.application\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0501D6F-F5B5-4FD9-A841-407EF474EE8B}|Modules\\Orders\\OrderManagement.Modules.Orders.Application\\OrderManagement.Modules.Orders.Application.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\modules\\orders\\ordermanagement.modules.orders.application\\ordermanagement.modules.orders.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C0501D6F-F5B5-4FD9-A841-407EF474EE8B}|Modules\\Orders\\OrderManagement.Modules.Orders.Application\\OrderManagement.Modules.Orders.Application.csproj|solutionrelative:modules\\orders\\ordermanagement.modules.orders.application\\ordermanagement.modules.orders.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E990D46D-7EF6-479C-9D50-A6C4F5603132}|BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\OrderManagement.BuildingBlocks.Domain.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\buildingblocks\\ordermanagement.buildingblocks.domain\\ordermanagement.buildingblocks.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E990D46D-7EF6-479C-9D50-A6C4F5603132}|BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\OrderManagement.BuildingBlocks.Domain.csproj|solutionrelative:buildingblocks\\ordermanagement.buildingblocks.domain\\ordermanagement.buildingblocks.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\configuration\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\configuration\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\middlewares\\exceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\middlewares\\exceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\ordermanagement.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\ordermanagement.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\api\\ordermanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C551EB8-BAFE-4E3B-81A2-022D94D915C2}|API\\OrderManagement.API\\OrderManagement.API.csproj|solutionrelative:api\\ordermanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E990D46D-7EF6-479C-9D50-A6C4F5603132}|BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\OrderManagement.BuildingBlocks.Domain.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\buildingblocks\\ordermanagement.buildingblocks.domain\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E990D46D-7EF6-479C-9D50-A6C4F5603132}|BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\OrderManagement.BuildingBlocks.Domain.csproj|solutionrelative:buildingblocks\\ordermanagement.buildingblocks.domain\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B224DAFA-147D-4BCD-A54F-24AF92754BC8}|BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\OrderManagement.BuildingBlocks.Application.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\buildingblocks\\ordermanagement.buildingblocks.application\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B224DAFA-147D-4BCD-A54F-24AF92754BC8}|BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\OrderManagement.BuildingBlocks.Application.csproj|solutionrelative:buildingblocks\\ordermanagement.buildingblocks.application\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B224DAFA-147D-4BCD-A54F-24AF92754BC8}|BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\OrderManagement.BuildingBlocks.Application.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\buildingblocks\\ordermanagement.buildingblocks.application\\iexecutioncontextaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B224DAFA-147D-4BCD-A54F-24AF92754BC8}|BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\OrderManagement.BuildingBlocks.Application.csproj|solutionrelative:buildingblocks\\ordermanagement.buildingblocks.application\\iexecutioncontextaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Configuration\\ExecutionContext\\ExecutionContextAccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\OrderManagement.API\\Configuration\\ExecutionContext\\ExecutionContextAccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A22C67-B38B-4A4D-BFF5-39A9E1CBB6B8}|BuildingBlocks\\OrderManagement.BuildingBlocks.Infrastructure\\OrderManagement.BuildingBlocks.Infrastructure.csproj|c:\\users\\luong\\code\\modularmonolith\\order-modular-monolith\\src\\buildingblocks\\ordermanagement.buildingblocks.infrastructure\\ordermanagement.buildingblocks.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E7A22C67-B38B-4A4D-BFF5-39A9E1CBB6B8}|BuildingBlocks\\OrderManagement.BuildingBlocks.Infrastructure\\OrderManagement.BuildingBlocks.Infrastructure.csproj|solutionrelative:buildingblocks\\ordermanagement.buildingblocks.infrastructure\\ordermanagement.buildingblocks.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,8 +102,52 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SwaggerExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Configuration\\Extensions\\SwaggerExtensions.cs",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\Configuration\\Extensions\\SwaggerExtensions.cs",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Configuration\\Extensions\\SwaggerExtensions.cs",
+              "RelativeToolTip": "API\\OrderManagement.API\\Configuration\\Extensions\\SwaggerExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:51:28.524Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "API\\OrderManagement.API\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:52:40.551Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "docker-compose.override.yml",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\docker-compose.override.yml",
+              "RelativeDocumentMoniker": "docker-compose.override.yml",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\docker-compose.override.yml",
+              "RelativeToolTip": "docker-compose.override.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-03-12T15:27:49.847Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
@@ -34,10 +171,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -65,10 +198,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
@@ -77,7 +206,257 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwDMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-03-13T03:53:57.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\appsettings.json",
+              "RelativeToolTip": "API\\OrderManagement.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-12T08:07:38.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderManagement.API.csproj",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\OrderManagement.API.csproj",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\OrderManagement.API.csproj",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\OrderManagement.API.csproj",
+              "RelativeToolTip": "API\\OrderManagement.API\\OrderManagement.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-12T16:47:50.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderManagement.API",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\OrderManagement.API.csproj",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\OrderManagement.API.csproj",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\OrderManagement.API.csproj",
+              "RelativeToolTip": "API\\OrderManagement.API\\OrderManagement.API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-12T16:51:16.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-12T17:03:11.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-12T17:16:16.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "API\\OrderManagement.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvyYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-12T08:56:19.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\appsettings.Production.json",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\appsettings.Production.json",
+              "RelativeToolTip": "API\\OrderManagement.API\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-12T12:04:42.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\Modules\\Products\\OrderManagement.Modules.Products.Application\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "Modules\\Products\\OrderManagement.Modules.Products.Application\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\Modules\\Products\\OrderManagement.Modules.Products.Application\\GlobalUsings.cs",
+              "RelativeToolTip": "Modules\\Products\\OrderManagement.Modules.Products.Application\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T11:54:28.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderManagement.Modules.Orders.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\Modules\\Orders\\OrderManagement.Modules.Orders.Application\\OrderManagement.Modules.Orders.Application.csproj",
+              "RelativeDocumentMoniker": "Modules\\Orders\\OrderManagement.Modules.Orders.Application\\OrderManagement.Modules.Orders.Application.csproj",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\Modules\\Orders\\OrderManagement.Modules.Orders.Application\\OrderManagement.Modules.Orders.Application.csproj",
+              "RelativeToolTip": "Modules\\Orders\\OrderManagement.Modules.Orders.Application\\OrderManagement.Modules.Orders.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-12T11:10:48.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\GlobalUsings.cs",
+              "RelativeToolTip": "API\\OrderManagement.API\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T09:11:59.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderManagement.BuildingBlocks.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\OrderManagement.BuildingBlocks.Domain.csproj",
+              "RelativeDocumentMoniker": "BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\OrderManagement.BuildingBlocks.Domain.csproj",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\OrderManagement.BuildingBlocks.Domain.csproj",
+              "RelativeToolTip": "BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\OrderManagement.BuildingBlocks.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-12T04:24:29.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderManagement.API.http",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\OrderManagement.API.http",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\OrderManagement.API.http",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\OrderManagement.API.http",
+              "RelativeToolTip": "API\\OrderManagement.API\\OrderManagement.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-12T04:02:41.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "API\\OrderManagement.API\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:05:15.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\Program.cs",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Program.cs",
+              "RelativeToolTip": "API\\OrderManagement.API\\Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAIwEUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:27:57.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ExecutionContextAccessor.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Configuration\\ExecutionContext\\ExecutionContextAccessor.cs",
+              "RelativeDocumentMoniker": "API\\OrderManagement.API\\Configuration\\ExecutionContext\\ExecutionContextAccessor.cs",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\API\\OrderManagement.API\\Configuration\\ExecutionContext\\ExecutionContextAccessor.cs",
+              "RelativeToolTip": "API\\OrderManagement.API\\Configuration\\ExecutionContext\\ExecutionContextAccessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:30:25.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\GlobalUsings.cs",
+              "RelativeToolTip": "BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:54:05.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IExecutionContextAccessor.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\IExecutionContextAccessor.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\IExecutionContextAccessor.cs",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\IExecutionContextAccessor.cs",
+              "RelativeToolTip": "BuildingBlocks\\OrderManagement.BuildingBlocks.Application\\IExecutionContextAccessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:54:32.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\GlobalUsings.cs",
+              "RelativeToolTip": "BuildingBlocks\\OrderManagement.BuildingBlocks.Domain\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:54:39.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderManagement.BuildingBlocks.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\BuildingBlocks\\OrderManagement.BuildingBlocks.Infrastructure\\OrderManagement.BuildingBlocks.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "BuildingBlocks\\OrderManagement.BuildingBlocks.Infrastructure\\OrderManagement.BuildingBlocks.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\luong\\CODE\\ModularMonolith\\order-modular-monolith\\src\\BuildingBlocks\\OrderManagement.BuildingBlocks.Infrastructure\\OrderManagement.BuildingBlocks.Infrastructure.csproj",
+              "RelativeToolTip": "BuildingBlocks\\OrderManagement.BuildingBlocks.Infrastructure\\OrderManagement.BuildingBlocks.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-12T04:20:44.309Z",
+              "EditorCaption": ""
             }
           ]
         }

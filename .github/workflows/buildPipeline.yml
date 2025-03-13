@@ -1,0 +1,56 @@
+name: CI/CD Production (Deploy to Docker Hub)
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Login to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Build Docker Image
+      run: |
+        docker build -t luongtuananh/order-management:latest .
+    
+    - name: Push Docker Image
+      run: |
+        docker push luongtuananh/order-management:latest
+        
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to Server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        script: |
+          docker pull luongtuananh/order-management:latest
+          docker stop order-management || true
+          docker rm order-management || true
+          docker run -d --name order-management -p 5000:8080 -p 5001:8081 luongtuananh/order-management:latest
+    - name: Setup Liquibase
+      run: |
+        wget https://github.com/liquibase/liquibase/releases/download/v4.23.2/liquibase-4.23.2.zip
+        unzip liquibase-4.23.2.zip
+        sudo mv liquibase /usr/local/bin/liquibase
+        liquibase --version
+    - name: Run Migration
+      run: |
+        liquibase update \
+        --url="jdbc:sqlserver://your_server:1433;databaseName=OrderManagementDb" \
+        --username="sa" --password="Alo1234567" \
+        --changeLogFile="changelog.xml"

@@ -1,0 +1,29 @@
+
+
+docker-compose down -v     # 1️. Dừng container & xóa volumes
+docker rmi -f liquibase/liquibase  # 2. Xóa image cũ
+docker builder prune -a -f  # 3️. Xóa toàn bộ cache build
+
+Run container Liquibase in Powershell (in project folder contains docker):
+docker run --rm -it liquibase/liquibase /bin/sh
+If above command run ok, error at docker-entrypoint.sh, else if exited immediately: image has error.
+
+Enter: liquibase --version
+If result: command not found, check Liquibase has exited in /usr/local/bin: ls -l /usr/local/bin/liquibase
+If result is Ok, modify docker-entrypoint.sh:
+Add "export PATH=$PATH:/usr/local/bin" before "liquibase update".
+In Visual Studio, Save as docker-entrypoint.sh, click arrow down next to Save button, 
+click Save with Encoding, choose UTF-8 without signature (No BOM).
+
+Assign access permission of docker-entrypoint.sh (Run in Powershell, at project folder contains docker): 
+chmod +x /liquibase/docker-entrypoint.sh
+
+If result: chmod: changing permissions of '/liquibase/docker-entrypoint.sh': Operation not permitted
+Open git bash, move to project folder (at folder contains github folder): cd /c/Users/luong/CODE/ModularMonolith/order-modular-monolith
+Run command assign access permission of docker-entrypoint.sh: 
+git add src/database/liquibase/docker-entrypoint.sh
+git update-index --chmod=+x src/database/liquibase/docker-entrypoint.sh
+
+
+
+
