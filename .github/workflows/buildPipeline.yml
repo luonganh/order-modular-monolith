@@ -42,15 +42,3 @@ jobs:
           docker stop order-management || true
           docker rm order-management || true
           docker run -d --name order-management -p 5000:8080 -p 5001:8081 luongtuananh/order-management:latest
-    - name: Setup Liquibase
-      run: |
-        wget https://github.com/liquibase/liquibase/releases/download/v4.23.2/liquibase-4.23.2.zip
-        unzip liquibase-4.23.2.zip
-        sudo mv liquibase /usr/local/bin/liquibase
-        liquibase --version
-    - name: Run Migration
-      run: |
-        liquibase update \
-        --url="jdbc:sqlserver://your_server:1433;databaseName=OrderManagementDb" \
-        --username="sa" --password="Alo1234567" \
-        --changeLogFile="changelog.xml"

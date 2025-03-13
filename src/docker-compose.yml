@@ -3,16 +3,16 @@ services:
     order-management:
         image: order-management:latest
         build: 
-            context: order-management
-            dockerfile: Dockerfile                         
+            context: .
+            dockerfile: Dockerfile
             args:
-                BUILD_CONFIGURATION: Release
+                BUILD_CONFIGURATION: Release # Debug
         container_name: order-management
         ports:
             - "5010:8080"
             - "7233:8081"
         environment:
-            - ASPNETCORE_ENVIRONMENT=Production
+            - ASPNETCORE_ENVIRONMENT=Production # Development
         depends_on:
             sqlserver:
                 condition: service_healthy
@@ -30,6 +30,10 @@ services:
           test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "Alo1234567", "-Q", "SELECT 1"]
           interval: 5s
           retries: 10
+        volumes:
+            - ./Database:/docker-entrypoint-initdb.d
+        command: >
+            /bin/bash -c "(/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Alo1234567 -i /docker-entrypoint-initdb.d/CreateDatabase_Linux.sql &) && /opt/mssql/bin/sqlservr"
     liquibase:
         image: liquibase/liquibase:latest       
         container_name: liquibase
@@ -38,18 +42,18 @@ services:
                 condition: service_healthy
         # working_dir: /liquibase
         volumes:
-            # - ./Liquibase:/liquibase  
+            # - ./Liquibase:/liquibase              
             - ./Database/liquibase/Migrations/:/liquibase/Migrations
             - ./Database/liquibase/Migrations/001-init-schema.sql:/liquibase/Migrations/001-init-schema.sql
             - ./Database/liquibase/Migrations/002-add-users-table.sql:/liquibase/Migrations/002-add-users-table.sql
             - ./Database/liquibase/changelog.xml:/liquibase/changelog.xml
-            - ./Database/liquibase/liquibase.properties:/liquibase/liquibase.properties        
+            - ./Database/liquibase/liquibase.properties:/liquibase/liquibase.properties 
         environment:
           LIQUIBASE_COMMAND_URL: "jdbc:sqlserver://sqlserver:1433;databaseName=OrderManagementDb;encrypt=false"
           LIQUIBASE_COMMAND_USERNAME: "sa"
           LIQUIBASE_COMMAND_PASSWORD: "Alo1234567"
           LIQUIBASE_CHANGELOG_FILE: "/liquibase/changelog.xml"
-        # entrypoint: [ "/bin/bash", "-c", "/liquibase/entrypoint.sh" ]            
+        # entrypoint: [ "/bin/bash", "-c", "/liquibase/entrypoint.sh" ]        
         command: ["update", "--changelog-file=/liquibase/changelog.xml"]
         restart: no
 networks:

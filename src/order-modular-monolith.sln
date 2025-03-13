@@ -70,6 +70,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.Modules.Orders.IntegrationEvents", "Modules\Orders\OrderManagement.Modules.Orders.IntegrationEvents\OrderManagement.Modules.Orders.IntegrationEvents.csproj", "{2EC07D08-1535-4997-B19D-D8BCF6A30DFB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{65E3E0D2-477C-406E-98DF-8738E67BD49C}"
+	ProjectSection(SolutionItems) = preProject
+		Database\CreateDatabase_Linux.sql = Database\CreateDatabase_Linux.sql
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{773AF482-8FA2-4F71-98BE-3957EFE3A833}"
 	ProjectSection(SolutionItems) = preProject

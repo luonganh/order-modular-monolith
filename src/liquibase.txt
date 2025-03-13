@@ -1,5 +1,4 @@
 
-
 docker-compose down -v     # 1️. Dừng container & xóa volumes
 docker rmi -f liquibase/liquibase  # 2. Xóa image cũ
 docker builder prune -a -f  # 3️. Xóa toàn bộ cache build
@@ -23,7 +22,18 @@ Open git bash, move to project folder (at folder contains github folder): cd /c/
 Run command assign access permission of docker-entrypoint.sh: 
 git add src/database/liquibase/docker-entrypoint.sh
 git update-index --chmod=+x src/database/liquibase/docker-entrypoint.sh
+git commit --amend --no-edit
 
+Open again Powershell (at project folder contains docker), assign access permission of docker-entrypoint.sh:
+chmod +x src/database/liquibase/docker-entrypoint.sh
 
+Open git bash, move to project folder (at folder contains github folder): cd /c/Users/luong/CODE/ModularMonolith/order-modular-monolith, 
+check docker-entrypoint.sh has exist:
+ls -l src/database/liquibase/docker-entrypoint.sh
+If result i.e: -rwxr-xr-x 1 luong 197609 147 Mar 13 18:06 src/database/liquibase/docker-entrypoint.sh* -> docker-entrypoint.sh has existed.
+Enter: find . -name "docker-entrypoint.sh" to check path of docker-entrypoint.sh file.
 
-
+docker-compose down -v
+docker-compose up --build
+docker-compose -f docker-compose.override.yml up --build
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build

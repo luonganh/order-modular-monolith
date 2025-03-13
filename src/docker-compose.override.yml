@@ -6,13 +6,13 @@ services:
             context: .
             dockerfile: Dockerfile
             args:
-                BUILD_CONFIGURATION: Debug
+                BUILD_CONFIGURATION: Debug # Release
         container_name: order-management
         ports:
             - "5010:8080"
             - "7233:8081"
         environment:
-            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_ENVIRONMENT= Development # Production
         depends_on:
             sqlserver:
                 condition: service_healthy
@@ -30,6 +30,10 @@ services:
           test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "Alo1234567", "-Q", "SELECT 1"]
           interval: 5s
           retries: 10
+        volumes:
+            - ./Database:/docker-entrypoint-initdb.d
+        command: >
+            /bin/bash -c "(/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Alo1234567 -i /docker-entrypoint-initdb.d/CreateDatabase_Linux.sql &) && /opt/mssql/bin/sqlservr"
     liquibase:
         image: liquibase/liquibase:latest       
         container_name: liquibase

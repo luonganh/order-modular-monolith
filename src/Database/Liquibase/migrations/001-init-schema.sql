@@ -1,14 +1,4 @@
-﻿CREATE DATABASE [OrderManagementDb] 
-CONTAINMENT = NONE 
-GO
-
-USE [OrderManagementDb]
-GO
-
-CREATE SCHEMA app AUTHORIZATION dbo
-GO
-
-CREATE TABLE IF NOT EXISTS app.example (
+﻿CREATE TABLE IF NOT EXISTS app.example (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL
 );
