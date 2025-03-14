@@ -8,6 +8,7 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DockerfileContext>..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,6 +31,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\BuildingBlocks\Common.Logging\Common.Logging.csproj" />
+    <ProjectReference Include="..\..\Modules\Orders\OrderManagement.Modules.Orders.Infrastructure\OrderManagement.Modules.Orders.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Modules\Products\OrderManagement.Modules.Products.Infrastructure\OrderManagement.Modules.Products.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Modules\Registrations\OrderManagement.Modules.Registrations.Infrastructure\OrderManagement.Modules.Registrations.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Modules\UserAccess\OrderManagement.Modules.UserAccess.Infrastructure\OrderManagement.Modules.UserAccess.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

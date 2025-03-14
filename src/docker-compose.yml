@@ -39,23 +39,19 @@ services:
         container_name: liquibase
         depends_on:
             sqlserver:
-                condition: service_healthy
-        # working_dir: /liquibase
-        volumes:
-            # - ./Liquibase:/liquibase              
-            - ./Database/liquibase/Migrations/:/liquibase/Migrations
-            - ./Database/liquibase/Migrations/001-init-schema.sql:/liquibase/Migrations/001-init-schema.sql
-            - ./Database/liquibase/Migrations/002-add-users-table.sql:/liquibase/Migrations/002-add-users-table.sql
+                condition: service_healthy        
+        volumes:            
+            - ./Database/liquibase/drivers/mssql-jdbc.jar:/liquibase/drivers/mssql-jdbc.jar           
+            - ./Database/liquibase/Migrations/001-init-schema.sql:/liquibase/migrations/001-init-schema.sql
+            - ./Database/liquibase/Migrations/002-init-tables-views.sql:/liquibase/migrations/002-init-tables-views.sql
             - ./Database/liquibase/changelog.xml:/liquibase/changelog.xml
-            - ./Database/liquibase/liquibase.properties:/liquibase/liquibase.properties 
+            - ./Database/liquibase/liquibase.properties:/liquibase/liquibase.properties         
         environment:
           LIQUIBASE_COMMAND_URL: "jdbc:sqlserver://sqlserver:1433;databaseName=OrderManagementDb;encrypt=false"
           LIQUIBASE_COMMAND_USERNAME: "sa"
-          LIQUIBASE_COMMAND_PASSWORD: "Alo1234567"
-          LIQUIBASE_CHANGELOG_FILE: "/liquibase/changelog.xml"
-        # entrypoint: [ "/bin/bash", "-c", "/liquibase/entrypoint.sh" ]        
-        command: ["update", "--changelog-file=/liquibase/changelog.xml"]
-        restart: no
+          LIQUIBASE_COMMAND_PASSWORD: "Alo1234567"        
+        command: ["update", "--changelog-file=changelog.xml"]        
+        restart: on-failure:3
 networks:
   default:
     driver: bridge

@@ -77,7 +77,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{773AF482-8FA2-4F71-98BE-3957EFE3A833}"
 	ProjectSection(SolutionItems) = preProject
 		Database\Liquibase\migrations\001-init-schema.sql = Database\Liquibase\migrations\001-init-schema.sql
-		Database\Liquibase\migrations\002-add-users-table.sql = Database\Liquibase\migrations\002-add-users-table.sql
+		Database\Liquibase\migrations\002-init-tables-views.sql = Database\Liquibase\migrations\002-init-tables-views.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "drivers", "drivers", "{66AA50CF-1DF7-4AB1-B68B-A78AC35967E5}"
@@ -88,7 +88,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Liquibase", "Liquibase", "{84A75395-94C5-4E37-BCA2-03754499C04D}"
 	ProjectSection(SolutionItems) = preProject
 		Database\Liquibase\changelog.xml = Database\Liquibase\changelog.xml
-		Database\Liquibase\docker-entrypoint.sh = Database\Liquibase\docker-entrypoint.sh
 		Database\Liquibase\liquibase.properties = Database\Liquibase\liquibase.properties
 	EndProjectSection
 EndProject

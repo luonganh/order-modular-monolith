@@ -1,9 +1,10 @@
 
-docker-compose down -v     # 1️. Dừng container & xóa volumes
-docker rmi -f liquibase/liquibase  # 2. Xóa image cũ
-docker builder prune -a -f  # 3️. Xóa toàn bộ cache build
+docker-compose down -v     # 1️. Stop container & delete volumes
+docker rmi -f liquibase/liquibase  # 2. Delete old images
+docker builder prune -a -f  # 3️. Delete all cache build
 
-Run container Liquibase in Powershell (in project folder contains docker):
+Run container Liquibase in Powershell (in project folder contains docker): 
+cd C:\Users\luong\CODE\ModularMonolith\order-modular-monolith\src
 docker run --rm -it liquibase/liquibase /bin/sh
 If above command run ok, error at docker-entrypoint.sh, else if exited immediately: image has error.
 
@@ -37,3 +38,21 @@ docker-compose down -v
 docker-compose up --build
 docker-compose -f docker-compose.override.yml up --build
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
+
+
+volumes:
+  - "${PWD}/Database/liquibase/changelog.xml:/liquibase/changelog.xml"
+
+Run container is running:
+docker exec -it d394c95db94ea0eb822405c596d37ec3b8c4b58b1534db4ae23c7f8f6fef9728 /bin/sh
+
+Run container in interactive mode (container can't start normally)
+docker run --rm -it \
+  -v ${PWD}/src/Database/Liquibase:/liquibase \
+  liquibase/liquibase /bin/sh
+
+docker run --rm -it `
+  -v "C:/Users/luong/CODE/ModularMonolith/order-modular-monolith/src/Database/liquibase/changelog.xml:/liquibase/changelog.xml" `
+  liquibase/liquibase /bin/sh
+
+
