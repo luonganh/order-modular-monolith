@@ -1,0 +1,57 @@
+version: '3.8'
+services:
+    order-management:
+        image: order-management:latest
+        build: 
+            context: .
+            dockerfile: Dockerfile
+            args:
+                BUILD_CONFIGURATION: Debug # Release
+        container_name: order-management
+        ports:
+            - "5010:8080"
+            - "7233:8081"
+        environment:
+            - ASPNETCORE_ENVIRONMENT= Development # Production
+        depends_on:
+            sqlserver:
+                condition: service_healthy
+        restart: always
+    sqlserver:
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        container_name: sqlserver
+        ports:
+            - "1433:1433"
+        environment:
+            SA_PASSWORD: "Alo1234567"
+            ACCEPT_EULA: "Y"
+        restart: always
+        healthcheck:
+          test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "Alo1234567", "-Q", "SELECT 1"]
+          interval: 5s
+          retries: 10
+        volumes:
+            - ./Database:/docker-entrypoint-initdb.d
+        command: >
+            /bin/bash -c "(/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Alo1234567 -i /docker-entrypoint-initdb.d/CreateDatabase_Linux.sql &) && /opt/mssql/bin/sqlservr"
+    liquibase:
+        image: liquibase/liquibase:latest       
+        container_name: liquibase
+        depends_on:
+            sqlserver:
+                condition: service_healthy       
+        volumes:            
+            - ./Database/liquibase/drivers/mssql-jdbc.jar:/liquibase/drivers/mssql-jdbc.jar           
+            - ./Database/liquibase/Migrations/001-init-schema.sql:/liquibase/migrations/001-init-schema.sql
+            - ./Database/liquibase/Migrations/002-init-tables-views.sql:/liquibase/migrations/002-init-tables-views.sql
+            - ./Database/liquibase/changelog.xml:/liquibase/changelog.xml
+            - ./Database/liquibase/liquibase.properties:/liquibase/liquibase.properties         
+        environment:
+          LIQUIBASE_COMMAND_URL: "jdbc:sqlserver://sqlserver:1433;databaseName=OrderManagementDb;encrypt=false"
+          LIQUIBASE_COMMAND_USERNAME: "sa"
+          LIQUIBASE_COMMAND_PASSWORD: "Alo1234567"          
+        command: ["update", "--changelog-file=changelog.xml"]        
+        restart: on-failure:3
+networks:
+  default:
+    driver: bridge

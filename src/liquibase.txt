@@ -1,0 +1,58 @@
+
+docker-compose down -v     # 1️. Stop container & delete volumes
+docker rmi -f liquibase/liquibase  # 2. Delete old images
+docker builder prune -a -f  # 3️. Delete all cache build
+
+Run container Liquibase in Powershell (in project folder contains docker): 
+cd C:\Users\luong\CODE\ModularMonolith\order-modular-monolith\src
+docker run --rm -it liquibase/liquibase /bin/sh
+If above command run ok, error at docker-entrypoint.sh, else if exited immediately: image has error.
+
+Enter: liquibase --version
+If result: command not found, check Liquibase has exited in /usr/local/bin: ls -l /usr/local/bin/liquibase
+If result is Ok, modify docker-entrypoint.sh:
+Add "export PATH=$PATH:/usr/local/bin" before "liquibase update".
+In Visual Studio, Save as docker-entrypoint.sh, click arrow down next to Save button, 
+click Save with Encoding, choose UTF-8 without signature (No BOM).
+
+Assign access permission of docker-entrypoint.sh (Run in Powershell, at project folder contains docker): 
+chmod +x /liquibase/docker-entrypoint.sh
+
+If result: chmod: changing permissions of '/liquibase/docker-entrypoint.sh': Operation not permitted
+Open git bash, move to project folder (at folder contains github folder): cd /c/Users/luong/CODE/ModularMonolith/order-modular-monolith
+Run command assign access permission of docker-entrypoint.sh: 
+git add src/database/liquibase/docker-entrypoint.sh
+git update-index --chmod=+x src/database/liquibase/docker-entrypoint.sh
+git commit --amend --no-edit
+
+Open again Powershell (at project folder contains docker), assign access permission of docker-entrypoint.sh:
+chmod +x src/database/liquibase/docker-entrypoint.sh
+
+Open git bash, move to project folder (at folder contains github folder): cd /c/Users/luong/CODE/ModularMonolith/order-modular-monolith, 
+check docker-entrypoint.sh has exist:
+ls -l src/database/liquibase/docker-entrypoint.sh
+If result i.e: -rwxr-xr-x 1 luong 197609 147 Mar 13 18:06 src/database/liquibase/docker-entrypoint.sh* -> docker-entrypoint.sh has existed.
+Enter: find . -name "docker-entrypoint.sh" to check path of docker-entrypoint.sh file.
+
+docker-compose down -v
+docker-compose up --build
+docker-compose -f docker-compose.override.yml up --build
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
+
+
+volumes:
+  - "${PWD}/Database/liquibase/changelog.xml:/liquibase/changelog.xml"
+
+Run container is running:
+docker exec -it d394c95db94ea0eb822405c596d37ec3b8c4b58b1534db4ae23c7f8f6fef9728 /bin/sh
+
+Run container in interactive mode (container can't start normally)
+docker run --rm -it \
+  -v ${PWD}/src/Database/Liquibase:/liquibase \
+  liquibase/liquibase /bin/sh
+
+docker run --rm -it `
+  -v "C:/Users/luong/CODE/ModularMonolith/order-modular-monolith/src/Database/liquibase/changelog.xml:/liquibase/changelog.xml" `
+  liquibase/liquibase /bin/sh
+
+
