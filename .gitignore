@@ -398,3 +398,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/src/.vs/order-modular-monolith/v17/DocumentLayout.backup.json
+/src/.vs/order-modular-monolith/CopilotIndices/17.13.433.20974/CodeChunks.db
+/src/.vs/order-modular-monolith/CopilotIndices/17.13.433.20974/SemanticSymbols.db
