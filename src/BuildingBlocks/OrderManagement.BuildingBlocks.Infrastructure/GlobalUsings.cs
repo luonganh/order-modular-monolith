@@ -1,1 +1,21 @@
-﻿
+﻿global using OrderManagement.BuildingBlocks.Domain;
+global using MediatR;
+global using OrderManagement.BuildingBlocks.Application.Outbox;
+global using Microsoft.Data.SqlClient;
+global using System.Data;
+global using OrderManagement.BuildingBlocks.Application.Data;
+global using OrderManagement.BuildingBlocks.Application.Events;
+global using System.Text.Json;
+global using Microsoft.EntityFrameworkCore;
+global using OrderManagement.BuildingBlocks.Application.Emails;
+global using Serilog;
+global using Dapper;
+global using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+global using System.Collections.Concurrent;
+global using OrderManagement.BuildingBlocks.Infrastructure.DomainEventsDispatching;
+global using Newtonsoft.Json;
+global using Newtonsoft.Json.Serialization;
+global using System.Reflection;
+global using JsonProperty = Newtonsoft.Json.Serialization.JsonProperty;
+global using Autofac;
+global using OrderManagement.BuildingBlocks.Infrastructure.Serialization;
