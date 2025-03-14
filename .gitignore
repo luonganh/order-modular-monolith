@@ -398,3 +398,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Copilot Indices (Github Copilot)
+.vs/order-modular-monolith/CopilotIndices/
+
+# Skip all files SQLite Database
+*.db
+*.db-shm
+*.db-wal
