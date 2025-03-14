@@ -406,3 +406,9 @@ FodyWeavers.xsd
 *.db
 *.db-shm
 *.db-wal
+/src/.vs/order-modular-monolith/CopilotIndices/17.13.433.20974/CodeChunks.db
+/src/.vs/order-modular-monolith/CopilotIndices/17.13.433.20974/CodeChunks.db-shm
+/src/.vs/order-modular-monolith/CopilotIndices/17.13.433.20974/CodeChunks.db-wal
+/src/.vs/order-modular-monolith/CopilotIndices/17.13.433.20974/SemanticSymbols.db
+/src/.vs/order-modular-monolith/CopilotIndices/17.13.433.20974/SemanticSymbols.db-shm
+/src/.vs/order-modular-monolith/CopilotIndices/17.13.433.20974/SemanticSymbols.db-wal
