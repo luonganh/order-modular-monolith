@@ -1,22 +1,22 @@
 version: '3.8'
 services:
-    order-management:
-        image: order-management:latest
-        build: 
-            context: .
-            dockerfile: Dockerfile
-            args:
-                BUILD_CONFIGURATION: Debug # Release
-        container_name: order-management
-        ports:
-            - "5010:8080"
-            - "7233:8081"
-        environment:
-            - ASPNETCORE_ENVIRONMENT= Development # Production
-        depends_on:
-            sqlserver:
-                condition: service_healthy
-        restart: always
+    # order-management:
+    #     image: order-management:latest
+    #     build: 
+    #         context: .
+    #         dockerfile: Dockerfile
+    #         args:
+    #             BUILD_CONFIGURATION: Debug # Release
+    #     container_name: order-management
+    #     ports:
+    #         - "5010:8080"
+    #         - "7233:8081"
+    #     environment:
+    #         - ASPNETCORE_ENVIRONMENT= Development # Production
+    #     depends_on:
+    #         sqlserver:
+    #             condition: service_healthy
+    #     restart: always
     sqlserver:
         image: mcr.microsoft.com/mssql/server:2019-latest
         container_name: sqlserver

@@ -22,8 +22,7 @@
 			IUnitOfWork unitOfWork)
 		{
 			_decorated = decorated;
-			_unitOfWork = unitOfWork;
-			Console.WriteLine($"📌 UnitOfWorkCommandHandlerDecorator đang khởi tạo");
+			_unitOfWork = unitOfWork;			
 		}
 
 		/// <summary>
@@ -33,15 +32,11 @@
 		/// <param name="cancellationToken">A token to monitor for cancellation requests.</param>
 		/// <returns>A task representing the asynchronous operation.</returns>
 		public async Task Handle(T command, CancellationToken cancellationToken)
-		{
-			Console.WriteLine($"📌 BuildingBlocks UnitOfWorkCommandHandlerDecorator Đang chạy decorator: {this.GetType()}");
-			Console.WriteLine($"📌 UnitOfWorkCommandHandlerDecorator Handle");
-
+		{			
 			// Delegate the handling of the command to the decorated handler
 			await this._decorated.Handle(command, cancellationToken);
 
-			// Commit the unit of work after handling the command0			
-			Console.WriteLine($"📌 Đang thực hiện lệnh CommitAsync của UnitOfWorkCommandHandlerDecorator");
+			// Commit the unit of work after handling the command0						
 			await this._unitOfWork.CommitAsync(cancellationToken);
 		}
 	}

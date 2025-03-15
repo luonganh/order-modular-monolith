@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\OrderManagement.Modules.UserAccess.Application\OrderManagement.Modules.UserAccess.Application.csproj" />
   </ItemGroup>
 

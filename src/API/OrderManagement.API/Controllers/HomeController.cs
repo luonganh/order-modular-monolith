@@ -15,8 +15,7 @@
         /// <param name="logger">The logger instance.</param>
         public HomeController(ILogger<HomeController> logger)
         {
-            _logger = logger;
-            Console.WriteLine($"HomeController được khởi tạo");
+            _logger = logger;           
         }
 
         /// <summary>

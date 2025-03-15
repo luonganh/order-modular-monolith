@@ -22,22 +22,6 @@ CREATE TABLE [users].[UserRoles]
 )
 GO
 
-CREATE TABLE [registrations].[UserRegistrations]
-(
-    [Id] UNIQUEIDENTIFIER NOT NULL,
-    [Login] NVARCHAR(100) NOT NULL,
-    [Email] NVARCHAR (255) NOT NULL,
-    [Password] NVARCHAR(255) NOT NULL,
-    [FirstName] NVARCHAR(50) NOT NULL,
-    [LastName] NVARCHAR(50) NOT NULL,
-    [Name] NVARCHAR (255) NOT NULL,
-	[StatusCode] VARCHAR(50) NOT NULL,
-	[RegisterDate] DATETIME NOT NULL,
-	[ConfirmedDate] DATETIME NULL,
-    CONSTRAINT [PK_registrations_UserRegistrations_Id] PRIMARY KEY ([Id] ASC)
-)
-GO
-
 CREATE TABLE [users].[Permissions]
 (
 	[Code] VARCHAR(50) NOT NULL,
@@ -55,7 +39,7 @@ CREATE TABLE [users].[RolesToPermissions]
 )
 GO
 
-CREATE TABLE [users].OutboxMessages
+CREATE TABLE [users].[OutboxMessages]
 (
 	[Id] UNIQUEIDENTIFIER NOT NULL,
 	[OccurredOn] DATETIME2 NOT NULL,
@@ -66,7 +50,7 @@ CREATE TABLE [users].OutboxMessages
 )
 GO
 
-CREATE TABLE [users].InboxMessages
+CREATE TABLE [users].[InboxMessages]
 (
 	[Id] UNIQUEIDENTIFIER NOT NULL,
 	[OccurredOn] DATETIME2 NOT NULL,
@@ -77,7 +61,7 @@ CREATE TABLE [users].InboxMessages
 )
 GO
 
-CREATE TABLE [users].InternalCommands
+CREATE TABLE [users].[InternalCommands]
 (
 	[Id] UNIQUEIDENTIFIER NOT NULL,
 	[EnqueueDate] DATETIME2 NOT NULL,
@@ -100,6 +84,54 @@ CREATE TABLE [app].[Emails]
 	CONSTRAINT [PK_app_Emails_Id] PRIMARY KEY CLUSTERED ([Id] ASC)
 )
 GO
+
+CREATE TABLE [registrations].[UserRegistrations]
+(
+    [Id] UNIQUEIDENTIFIER NOT NULL,
+    [Login] NVARCHAR(100) NOT NULL,
+    [Email] NVARCHAR (255) NOT NULL,
+    [Password] NVARCHAR(255) NOT NULL,
+    [FirstName] NVARCHAR(50) NOT NULL,
+    [LastName] NVARCHAR(50) NOT NULL,
+    [Name] NVARCHAR (255) NOT NULL,
+	[StatusCode] VARCHAR(50) NOT NULL,
+	[RegisterDate] DATETIME NOT NULL,
+	[ConfirmedDate] DATETIME NULL,
+    CONSTRAINT [PK_registrations_UserRegistrations_Id] PRIMARY KEY ([Id] ASC)
+)
+GO
+
+CREATE TABLE [registrations].[OutboxMessages] (
+    [Id]            UNIQUEIDENTIFIER NOT NULL,
+    [OccurredOn]    DATETIME2 (7)    NOT NULL,
+    [Type]          VARCHAR (255)    NOT NULL,
+    [Data]          VARCHAR (MAX)    NOT NULL,
+    [ProcessedDate] DATETIME2 (7)    NULL,
+    CONSTRAINT [PK_users_OutboxMessages_Id] PRIMARY KEY CLUSTERED ([Id] ASC)
+    )
+GO
+
+CREATE TABLE [registrations].[InboxMessages] (
+    [Id]            UNIQUEIDENTIFIER NOT NULL,
+    [OccurredOn]    DATETIME2 (7)    NOT NULL,
+    [Type]          VARCHAR (255)    NOT NULL,
+    [Data]          VARCHAR (MAX)    NOT NULL,
+    [ProcessedDate] DATETIME2 (7)    NULL,
+    CONSTRAINT [PK_registrations_InboxMessages_Id] PRIMARY KEY CLUSTERED ([Id] ASC)
+    )
+GO
+
+CREATE TABLE [registrations].[InternalCommands] (
+    [Id]            UNIQUEIDENTIFIER NOT NULL,
+    [EnqueueDate]   DATETIME2 (7)    NOT NULL,
+    [Type]          VARCHAR (255)    NOT NULL,
+    [Data]          VARCHAR (MAX)    NOT NULL,
+    [ProcessedDate] DATETIME2 (7)    NULL,
+    [Error]         NVARCHAR (MAX)   NULL,
+    CONSTRAINT [PK_registrations_InternalCommands_Id] PRIMARY KEY CLUSTERED ([Id] ASC)
+    )
+GO
+
 
 CREATE VIEW [users].[v_Users]
 AS
@@ -144,4 +176,10 @@ SELECT
     [UserRegistration].[StatusCode],
     [UserRegistration].[Password]
 FROM [registrations].[UserRegistrations] AS [UserRegistration]
+GO
+
+INSERT INTO [users].[Users] VALUES ('0beb0b3c-ee09-497f-ba94-cb4f7fee8a90', 'admin', 'luonganh@gmail.com', 'Alo1234567', 1, 'Anh', 'Luong', 'Anh Luong')
+GO
+
+INSERT INTO [users].[UserRoles] VALUES ('0beb0b3c-ee09-497f-ba94-cb4f7fee8a90', 'Administrator')
 GO

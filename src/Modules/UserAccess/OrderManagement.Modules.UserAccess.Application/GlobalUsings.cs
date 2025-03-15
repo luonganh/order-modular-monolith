@@ -1,0 +1,14 @@
+﻿global using Dapper;
+global using FluentValidation;
+global using MediatR;
+global using OrderManagement.BuildingBlocks.Application;
+global using OrderManagement.BuildingBlocks.Application.Data;
+global using OrderManagement.Modules.UserAccess.Application.Authentication.Authenticate;
+global using OrderManagement.Modules.UserAccess.Application.Configuration.Commands;
+global using OrderManagement.Modules.UserAccess.Application.Configuration.Queries;
+global using OrderManagement.Modules.UserAccess.Application.Contracts;
+global using OrderManagement.Modules.UserAccess.Domain.Users;
+global using System.Runtime.CompilerServices;
+global using System.Security.Claims;
+global using System.Security.Cryptography;
+global using OrderManagement.Modules.UserAccess.Application.Authorization.GetUserPermissions;

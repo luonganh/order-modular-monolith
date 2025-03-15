@@ -36,17 +36,12 @@
 		public async Task Handle(T notification, CancellationToken cancellationToken)
 		{
 			try
-			{
-				Console.WriteLine($"📌 BuildingBlocks DomainEventsDispatcherNotificationHandlerDecorator Đang chạy decorator: {this.GetType()}");
-				Console.WriteLine($"📌 DomainEventsDispatcherNotificationHandlerDecorator Handle");
-				
+			{				
 				// Call the decorated notification handler to handle the notification
 				await this._decorated.Handle(notification, cancellationToken);
-				
-				Console.WriteLine($"📢 Dispatching domain events...");
+								
 				// After the notification has been handled, dispatch any domain events
-				await this._domainEventsDispatcher.DispatchEventsAsync();
-				Console.WriteLine($"✅ Domain events dispatched.");
+				await this._domainEventsDispatcher.DispatchEventsAsync();				
 			}
 			catch (Exception ex)
 			{

@@ -36,8 +36,7 @@
 			_scope = scope;
 			_outbox = outbox;
 			_domainEventsProvider = domainEventsProvider;
-			_domainNotificationsMapper = domainNotificationsMapper;			
-			Console.WriteLine($"DomainEventsDispatcher được khởi tạo");
+			_domainNotificationsMapper = domainNotificationsMapper;						
 		}
 
 		/// <summary>

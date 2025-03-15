@@ -1,0 +1,27 @@
+﻿namespace OrderManagement.Modules.Registrations.Application.UserRegistrations.SendUserRegistrationConfirmationEmail
+{
+    internal class SendUserRegistrationConfirmationEmailCommandHandler : ICommandHandler<SendUserRegistrationConfirmationEmailCommand>
+    {
+        private readonly IEmailSender _emailSender;
+
+        public SendUserRegistrationConfirmationEmailCommandHandler(
+            IEmailSender emailSender)
+        {
+            _emailSender = emailSender;
+        }
+
+        public async Task Handle(SendUserRegistrationConfirmationEmailCommand command, CancellationToken cancellationToken)
+        {
+            string link = $"<a href=\"{command.ConfirmLink}{command.UserRegistrationId.Value}\">link</a>";
+
+            string content = $"Welcome to Order Management application! Please confirm your registration using this {link}.";
+
+            var emailMessage = new EmailMessage(
+                command.Email,
+                "Order Management - Please confirm your registration",
+                content);
+
+            await _emailSender.SendEmail(emailMessage);
+        }
+    }
+}

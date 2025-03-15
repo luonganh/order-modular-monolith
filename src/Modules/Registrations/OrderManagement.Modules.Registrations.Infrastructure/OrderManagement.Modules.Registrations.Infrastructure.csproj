@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\UserAccess\OrderManagement.Modules.UserAccess.Application\OrderManagement.Modules.UserAccess.Application.csproj" />
+    <ProjectReference Include="..\..\UserAccess\OrderManagement.Modules.UserAccess.Infrastructure\OrderManagement.Modules.UserAccess.Infrastructure.csproj" />
+    <ProjectReference Include="..\OrderManagement.Modules.Registrations.Application\OrderManagement.Modules.Registrations.Application.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -20,8 +20,7 @@
 		/// <param name="domainEvent">Domain event.</param>
 		protected void AddDomainEvent(IDomainEvent domainEvent)
 		{
-			_domainEvents ??= [];
-			Console.WriteLine($"📢 Đã thêm event: {domainEvent.GetType().Name}");
+			_domainEvents ??= [];			
 			this._domainEvents.Add(domainEvent);
 		}
 

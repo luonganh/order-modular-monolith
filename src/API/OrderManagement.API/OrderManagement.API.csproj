@@ -19,6 +19,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="Configuration\Authorization\AttributeAuthorizationHandler.cs" />
+    <Compile Include="Configuration\Authorization\AuthorizationChecker.cs" />
+    <Compile Include="Configuration\Authorization\HasPermissionAttribute.cs" />
+    <Compile Include="Configuration\Authorization\HasPermissionAuthorizationHandler.cs" />
+    <Compile Include="Configuration\Authorization\HasPermissionAuthorizationRequirement.cs" />
+    <Compile Include="Configuration\Authorization\NoPermissionRequiredAttribute.cs" />
+    <Compile Include="Configuration\ExecutionContext\CorrelationMiddleware.cs" />
+    <Compile Include="Configuration\ExecutionContext\ExecutionContextAccessor.cs" />
     <Compile Include="Configuration\Extensions\SwaggerExtensions.cs" />
   </ItemGroup>
 
@@ -39,7 +47,6 @@
 
   <ItemGroup>
     <Folder Include="logs\" />
-    <Folder Include="Modules\UserAccess\" />
   </ItemGroup>
 
 </Project>
